@@ -1,0 +1,39 @@
+<!-- <p>partida works!</p> -->
+<div id="table">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Id Partida</th>
+            <th>Id Subpartida</th>
+            <th>Id Categoria</th>
+            <th>Id Proveedor</th>
+            <th>Minimo Nivel</th>
+            <th>Nombre de Categoria</th>
+            <th>nombre de Subpartida</th>
+            <th>Estatus</th>
+            <th>Accion</th>
+        </tr>
+        <tr *ngFor="let data of partidas ">
+            <td style="width: 5%">{{ data.id }}</td>
+            <td style="width: 5%">{{ data.idPartida }}</td>
+            <td style="width: 8%">{{ data.idSubpartida }}</td>
+            <td style="width: 10%">{{ data.idCategoria }}</td>
+            <td style="width: 10%">{{ data.idProveedor }}</td>
+            <td style="width: 10%">{{ data.minimoNivel }}</td>
+            <td style="width: 10%">{{ data.nameCategoria }}</td>
+            <td style="width: 10%">{{ data.nameSubpartida }}</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <form appearance="fill">
+        <label>Nombre</label>
+        <input Input for="new-partida" *partidaName>
+    </form>
+
+    <form appearance="fill">
+        <label>Id:</label>
+        <input Input for="new-partida" *partidaId>
+    </form>
+
+</div>
